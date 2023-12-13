@@ -82,6 +82,8 @@ run the main application
     },
     // ... other books
   ]
+<img width="2040" alt="image" src="https://github.com/Haaris01/letsbloomAssignment/assets/70129000/cc0952ec-b82f-4459-b545-a1ea1152bfe7">
+
 
 ### 2. Add a New Book
 **Endpoint:** `POST /api/addBook`
@@ -99,7 +101,8 @@ run the main application
 - **Response Example:**
   ```json
   "New Book Title added successfully"
-  
+<img width="1086" alt="image" src="https://github.com/Haaris01/letsbloomAssignment/assets/70129000/559d508a-b7af-45d6-a186-07baecbb339c">
+
 ### 3. Update Book Details
 
 **Endpoint:** `PUT /api/updateBook`
@@ -117,3 +120,6 @@ run the main application
 - **Response Example:**
   ```json
   "Updated Book Title successfully"
+
+<img width="1086" alt="image" src="https://github.com/Haaris01/letsbloomAssignment/assets/70129000/6730690a-9f91-46c3-a7e2-e7f8c94f1582">
+

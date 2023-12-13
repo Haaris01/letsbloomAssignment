@@ -31,3 +31,90 @@ Ensure you have the following installed on your machine:
 
    ```bash
    git clone <repository-url>
+
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd library-management-system
+
+3. **Install the dependencies:**
+
+   ```bash
+   npm i
+   
+### Environment configuration:
+
+Create a .env file in the root directory with the following content:
+`DB_URL=<your-mongodb-connection-string>`
+Replace `<your-mongodb-connection-string>` with the actual connection string for your MongoDB database.
+
+## Database seeding
+To seed the database with mock data, run:
+  `cd seeds`
+  `node index.js`
+
+## Running the application
+go back to root directory
+  `cd ../`
+run the main application
+  `node app.js`
+
+## API Documentation
+
+### 1. Retrieve All Books
+
+**Endpoint:** `GET /api/all`
+
+- **Description:** Retrieves a list of all books in the library.
+- **Request Method:** GET
+- **Response Format:** JSON
+- **Response Example:**
+
+  ```json
+  [
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald"
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee"
+    },
+    // ... other books
+  ]
+
+### 2. Add book
+
+**Endpoint:** `POST /api/addBook`
+
+- **Description:** Creates a book by using input from form body i.e `req.body`
+- **Request Method:** POST
+- **Request Body Format:** JSON
+- **Request Body Example:**
+  ```json
+  {
+    "title": "New Book Title",
+    "author": "New Book Author"
+  }
+- **Response Format:** JSON
+- **Response Example:**
+  ```json
+  "New Book Title added successfully"
+  
+### 3. Update book
+
+**Endpoint:** `PUT /api/updateBook`
+
+- **Description:** Takes the title from the form req.body finds and deletes that title and then adds new book with the same title and updated details.
+- **Request Method:** PUT
+- **Request Body Format:** JSON
+- **Request Body Example:**
+  ```json
+  {
+    "title": "Book to be updated Title",
+    "author": "updated Book Author"
+  }
+- **Response Format:** JSON
+- **Response Example:**
+  ```json
+  "Updated Book Title successfully"

@@ -2,7 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const books = require('./models/books'); // Make sure the path to your model is correct
 const app = express();
-mongoose.connect("mongodb+srv://haris_1:ahadahad@cluster0.5xo73.mongodb.net/library");
+const db_url = process.env.DB_URL;
+mongoose.connect(db_url);
 
 app.use(express.json());
 

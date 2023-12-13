@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const books = require('../models/books');
+const db_url = process.env.DB_URL;
 
-mongoose.connect("mongodb+srv://haris_1:ahadahad@cluster0.5xo73.mongodb.net/library");
+mongoose.connect(db_url);
 
 const db = mongoose.connection;
 

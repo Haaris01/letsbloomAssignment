@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 const books = require('../models/books');
-const db_url = process.env.DB_URL;
 
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+const db_url = process.env.DB_URL;
 mongoose.connect(db_url);
 
 const db = mongoose.connection;

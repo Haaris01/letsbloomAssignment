@@ -2,6 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const books = require('./models/books'); // Make sure the path to your model is correct
 const app = express();
+if (process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
 const db_url = process.env.DB_URL;
 mongoose.connect(db_url);
 

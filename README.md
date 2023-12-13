@@ -83,8 +83,7 @@ run the main application
     // ... other books
   ]
 
-### 2. Add book
-
+### 2. Add a New Book
 **Endpoint:** `POST /api/addBook`
 
 - **Description:** Creates a book by using input from form body i.e `req.body`
@@ -101,7 +100,7 @@ run the main application
   ```json
   "New Book Title added successfully"
   
-### 3. Update book
+### 3. Update Book Details
 
 **Endpoint:** `PUT /api/updateBook`
 

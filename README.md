@@ -63,7 +63,7 @@ run the main application
 
 ### 1. Retrieve All Books
 
-**Endpoint:** `GET /api/all`
+**Endpoint:** `GET /api/allBooks`
 
 - **Description:** Retrieves a list of all books in the library.
 - **Request Method:** GET

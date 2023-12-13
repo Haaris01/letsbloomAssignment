@@ -82,7 +82,8 @@ run the main application
     },
     // ... other books
   ]
-<img width="2040" alt="image" src="https://github.com/Haaris01/letsbloomAssignment/assets/70129000/cc0952ec-b82f-4459-b545-a1ea1152bfe7">
+<img width="1086" alt="image" src="https://github.com/Haaris01/letsbloomAssignment/assets/70129000/4f326b2f-beeb-4dc8-932e-601991f4be18">
+
 
 
 ### 2. Add a New Book

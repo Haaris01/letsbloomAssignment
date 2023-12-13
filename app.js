@@ -30,7 +30,7 @@ app.listen(port, function () {
     console.log(`SERVING ON PORT ${port}`);
 });
 
-router.get('/all', async (req, res) => {
+router.get('/allBooks', async (req, res) => {
     try {
         const allBooks = await books.find();
         console.log(allBooks);
@@ -46,7 +46,7 @@ router.post('/addBook', async (req, res) => {
         const { title, author } = req.body;
         console.log(title + " " + author);
         await books.create({title : title, author : author});
-        res.send(title);
+        res.send(title + " added successfully");
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Internal Server Error' });
